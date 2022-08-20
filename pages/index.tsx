@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import { motion } from 'framer-motion'
+import { motion } from '../framer-motion'
 import Script from 'next/script'
 import { useRouter } from 'next/router'
 const Home: NextPage = () => {
