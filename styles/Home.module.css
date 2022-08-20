@@ -1,10 +1,33 @@
 .container {
-  padding: 0 2rem;
+  margin: -8px;
+  padding: 0 5rem;
+  background-color: #000000;
+  background: linear-gradient(
+    to top,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 100%
+  );
+  align-items: center;
+  align-content: center;
 }
 
+
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  transform: scale(1);
+  min-height: 1000px;
+
+  padding-right: 0rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main2 {
+  transform: scale(1);
+  min-height: 1500px;
+
+  padding-right: 0rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -14,14 +37,21 @@
 
 .footer {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  padding: 3rem 0;
+  border-top: 2px solid #d66b4d;
+  color:white ;
+  width: 100%;
+  background-color: #000000;
   justify-content: center;
   align-items: center;
+  
+  position: relative;
+  bottom: 0;
+  right: 0;
 }
 
 .footer a {
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +59,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #ff0000;
   text-decoration: none;
 }
 
@@ -43,6 +73,12 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+}
+
+.titleDesc {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 50px;
 }
 
 .title,
@@ -67,8 +103,8 @@
 
 .grid {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   flex-wrap: wrap;
   max-width: 800px;
 }
@@ -83,6 +119,12 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+
+  background: linear-gradient(
+    to top,
+    rgb(255, 255, 255) 0%,
+    rgb(124, 124, 124) 100%
+  );
 }
 
 .card:hover,
@@ -113,4 +155,180 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.moving_background_gradient {
+  background: url("https://media0.giphy.com/media/jjMzVt3jaDfzoKr49R/giphy.gif?cid=ecf05e47zqxor0v0tl91s1b7grc7oaxnvsxe7pt7y5imn1k3&rid=giphy.gif&ct=g");
+  background-size: cover;
+  background-position: center;
+}
+
+.moving_background_gradient a:hover,
+.moving_background_gradient a:focus,
+.moving_background_gradient a:active {
+  text-decoration: underline;
+}
+
+.moving_background_gradient a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+.test {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.monitorContents {
+  filter: blur(1px);
+  filter: contrast(2);
+  position: relative;
+  bottom: 707px;
+  z-index: 1;
+  right: 10px;
+}
+.computerTable {
+  filter:brightness(0.3);
+  position: relative;
+  top: 170px;
+  z-index: 2;
+}
+
+.gridLinks{
+  z-index: 3;
+  margin: 1px;
+  padding: 4.5rem 3rem;
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -350px;
+  opacity: 0;
+
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+.monitorLinks{
+  position: relative;
+  margin: 0.3rem;
+  padding: 5rem;
+}
+
+.testContainer {
+  padding: 0 1rem;
+  margin: -8px;
+  background-color: #000000;
+  background: linear-gradient(
+    to top,
+    red 0%,
+    black 30%
+  );
+}
+
+.shutter {
+  position: fixed;
+  top: 0;
+  left: 24%;
+  right: 24%;
+  bottom: 0;
+  background-color: #d66b4d;
+  z-index: 9999;
+  height: auto;
+  margin: auto;
+}
+
+.positionFixed {
+  position: fixed;
+}
+
+.shutterLine {
+  position: fixed;
+  top: 0;
+  left: 49.99%;
+  right: 49.99%;
+  bottom: 0;
+  background-color: #000000;
+  z-index: 9999;
+  height: auto;
+  margin: auto;
+}
+
+.moving_background_gradient {
+  background: url("https://media3.giphy.com/media/ZnKdSM5piRLDW/giphy.gif?cid=ecf05e47l6nsuvwymkn9pe3t9wqvoew3i3p46hwlranu41py&rid=giphy.gif&ct=g");
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+  align-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-animation: title 3s infinite, HULogoFadeIn 5s 1;
+
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+
+.hu_Logo {
+  align-content: center;
+  max-width:400px;
+  max-height: 400px;
+  -webkit-animation: HULOGO 3s infinite, HULogoFadeIn 5s 1;
+}
+
+@-webkit-keyframes HULOGO {
+  0%, 100%  { -webkit-filter: blur(0px) saturate(1); }
+  50% { -webkit-filter: blur(2px) saturate(2);}
+}
+@-webkit-keyframes HULogoFadeIn {
+  0%, 50% { -webkit-filter: opacity(0); }
+  100% { -webkit-filter: opacity(1);}
+}
+@-webkit-keyframes title {
+  0%, 100%  { -webkit-filter: blur(0px) saturate(1); }
+  50% { -webkit-filter: blur(1px) saturate(2);}
+}
+
+.monitorScreenImage {
+  position: fixed;
+
+  top: 300px;
+  
+  width: 990px;
+  height: 200px;
+  object-fit:cover;
+  object-position:50% 50%;
+}
+
+.pocketWatch{
+  position: fixed;
+  bottom: 300px;
+  max-height: 300px;
+  filter:saturate(0.5) brightness(0.003) blur(1px);
+}
+
+.FZFContents {
+  color: white;
+  display: grid;
+}
+
+.notfound{
+  align-items: center;
+  place-items: center;
+  display: grid;
+  padding: 13.9rem;
+  margin: -8px;
+  background-color: #313131;
 }
